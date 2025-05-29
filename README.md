@@ -9,7 +9,7 @@ This project implements an image captioning model using a CNN (DenseNet201) for 
    ```bash
    git clone <repository_url>
    cd image_captioning_project
-````
+   ````
 
 2. **Create and activate a virtual environment** (optional but recommended)
 
