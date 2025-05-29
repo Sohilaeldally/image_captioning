@@ -1,4 +1,3 @@
-````markdown
 # Image Captioning Project
 
 This project implements an image captioning model using a CNN (DenseNet201) for feature extraction and an LSTM for caption generation, with a Streamlit app for user interaction.
@@ -49,14 +48,6 @@ Launch the Streamlit app to generate captions in real-time:
 
 ```bash
 streamlit run app.py
-```
-
-## Inference
-
-Generate captions for specific images via script:
-
-```bash
-python caption_generator.py
 ```
 
 ## Project Structure
