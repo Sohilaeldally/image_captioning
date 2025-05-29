@@ -52,18 +52,16 @@ streamlit run app.py
 
 ## Project Structure
 
-```
-image_captioning_project/
-├── app.py                   # Streamlit application
-├── caption_generator.py     # Script for generating captions
-├── train.py                 # Model training and curve plotting
-├── analysis_exploring.py    # Data exploration utilities
-├── requirements.txt         # Project dependencies
-├── data/                    # Dataset directory
-│   └── flickr8k/            # Flickr8k images and captions
-├── models/                  # Model definitions (DenseNet201 & LSTM)
-└── utils/                   # Utility functions (preprocessing, generators, etc.)
-```
+- **models/**: Contains model definitions for feature extraction and captioning
+- **utils/**: Utility functions for data preprocessing, data generation, display utilities, and file utilities
+- **data/**: Directory for the Flickr8k dataset (not included in the repository)
+- **docs/**: Documentation files
+  - **STScboBiz/**: Subdirectory for specific documentation
+- **caption_generator.py**: Script for generating captions from images
+- **app.py**: Streamlit application for generating captions
+- **train.py**: Script to train the model and plot the learning curve
+- **analysis_exploring.py**: Script to explore the dataset and visualize data
+- **requirements.txt**: Project dependencies
 
 ## Model Choice Rationale
 
