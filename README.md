@@ -52,12 +52,9 @@ streamlit run app.py
 
 ## Project Structure
 
-- **models/**: Contains model definitions for feature extraction and captioning
-- **utils/**: Utility functions for data preprocessing, data generation, display utilities, and file utilities
-- **data/**: Directory for the Flickr8k dataset (not included in the repository)
-- **docs/**: Documentation files
-  - **STScboBiz/**: Subdirectory for specific documentation
-- **caption_generator.py**: Script for generating captions from images
+- **models**: Contains model definitions for feature extraction and captioning
+- **utils**: Utility functions for data preprocessing,caption generator, data generation, display utilities, and file utilities
+- **data**: Directory for the Flickr8k dataset (not included in the repository)
 - **app.py**: Streamlit application for generating captions
 - **train.py**: Script to train the model and plot the learning curve
 - **analysis_exploring.py**: Script to explore the dataset and visualize data
