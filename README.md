@@ -2,7 +2,7 @@
 
 This project implements an image captioning model using a CNN (DenseNet201) for feature extraction and an LSTM for caption generation, with a Streamlit app for user interaction.
 
-![example](https://github.com/user-attachments/assets/57c437a4-8263-4f27-bebf-5070fd1e54dd)
+![dog](https://github.com/user-attachments/assets/462a6cd4-ac88-47ec-9d4f-6cac47477f7c)
 
 ## Setup
 
