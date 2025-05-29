@@ -1,1 +1,86 @@
-# Image captioning
+````markdown
+# Image Captioning Project
+
+This project implements an image captioning model using a CNN (DenseNet201) for feature extraction and an LSTM for caption generation, with a Streamlit app for user interaction.
+
+## Setup
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <repository_url>
+   cd image_captioning_project
+````
+
+2. **Create and activate a virtual environment** (optional but recommended)
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Download the Flickr8k dataset** and place it in the `data/flickr8k/` directory.
+
+## Data Exploration
+
+Before training, explore the dataset to visualize sample images and captions:
+
+```bash
+python analysis_exploring.py
+```
+
+## Training
+
+Train the model and plot the learning curve:
+
+```bash
+python train.py
+```
+
+## Running the Streamlit App
+
+Launch the Streamlit app to generate captions in real-time:
+
+```bash
+streamlit run app.py
+```
+
+## Inference
+
+Generate captions for specific images via script:
+
+```bash
+python caption_generator.py
+```
+
+## Project Structure
+
+```
+image_captioning_project/
+├── app.py                   # Streamlit application
+├── caption_generator.py     # Script for generating captions
+├── train.py                 # Model training and curve plotting
+├── analysis_exploring.py    # Data exploration utilities
+├── requirements.txt         # Project dependencies
+├── data/                    # Dataset directory
+│   └── flickr8k/            # Flickr8k images and captions
+├── models/                  # Model definitions (DenseNet201 & LSTM)
+└── utils/                   # Utility functions (preprocessing, generators, etc.)
+```
+
+## Model Choice Rationale
+
+* **DenseNet201 for Feature Extraction**: DenseNet201 captures hierarchical feature representations through dense blocks, producing robust 1920-dimensional image embeddings.
+* **LSTM for Caption Generation**: LSTM networks effectively model sequential dependencies, enabling coherent word-by-word caption generation based on image embeddings and prior context.
+
+## Notes
+
+* Ensure dataset paths in `train.py`, `app.py`, and `analysis_exploring.py` match your local directory structure.
+* You can extend this to larger datasets like Flickr30k or MS-COCO for improved performance.
+* Consider using GPU acceleration for faster training.
